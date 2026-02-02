@@ -12,8 +12,6 @@ app.use(cors({
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "client-token"]
 }));
-
-app.options("*", cors());
 app.use(express.json());
 //app.use("/api/freight", freightRoutes);
 
