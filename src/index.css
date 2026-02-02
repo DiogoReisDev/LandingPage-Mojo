@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-green: #3c6932;
+  --primary-beige: #f7ecd5;
+  --dark-green: #2d4f26;
+  --light-green: #4a7a3e;
+  --accent-beige: #f5e6c8;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    135deg,
+    var(--primary-beige) 0%,
+    #f0e4c1 50%,
+    var(--accent-beige) 100%
+  );
+  color: var(--primary-green);
+  line-height: 1.6;
+}
+
+/* ===================== */
+/* CORES */
+/* ===================== */
+
+.text-primary-green { color: var(--primary-green); }
+.text-primary-beige { color: var(--primary-beige); }
+
+.bg-primary-green {
+  background-color: var(--primary-green);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-primary-beige { background-color: var(--primary-beige); }
+.bg-dark-green { background-color: var(--dark-green); }
+.bg-light-green { background-color: var(--light-green); }
+
+.border-primary-green { border-color: var(--primary-green); }
+
+/* ===================== */
+/* GRADIENTES */
+/* ===================== */
+
+.gradient-green {
+  background: linear-gradient(
+    135deg,
+    var(--primary-green) 0%,
+    var(--light-green) 100%
+  );
+}
+
+.gradient-beige {
+  background: linear-gradient(
+    135deg,
+    var(--primary-beige) 0%,
+    var(--accent-beige) 100%
+  );
+}
+
+/* ===================== */
+/* SOMBRAS / GLASS */
+/* ===================== */
+
+.glass-effect {
+  background: rgba(247, 236, 213, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(60, 105, 50, 0.2);
+}
+
+.glass-soft {
+  background: rgba(247, 236, 213, 0.93);
+  backdrop-filter: blur(10px);
+}
+
+.shadow-green {
+  box-shadow: 0 10px 25px rgba(60, 105, 50, 0.15);
+}
+
+/* ===================== */
+/* ANIMAÇÕES */
+/* ===================== */
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(60, 105, 50, 0.2);
+}
+
+/* ===================== */
+/* PATTERN ORGÂNICO DE LOGOS (IGUAL AO HOME) */
+/* ===================== */
+
+
+/* garante que o conteúdo fique acima */
+.bg-primary-green > * {
+  position: relative;
+  z-index: 1;
+}
+
+button { overflow: hidden !important; }
+
