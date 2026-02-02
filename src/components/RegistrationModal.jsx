@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, User, Phone, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/use-toast";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const RegistrationModal = ({ isOpen, onClose }) => {
   const [name, setName] = useState("");
@@ -44,7 +45,7 @@ const RegistrationModal = ({ isOpen, onClose }) => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:3333/send-message", {
+      const response = await fetch(`${API_URL}/send-message`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

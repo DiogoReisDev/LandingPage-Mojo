@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Star, Users, Clock, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LogoBackground from "@/components/LogoBackground";
+import fotomojo7 from "@/assets/fotoscurso/fotomojo7.jpeg";
 
 const Hero = ({ onOpenModal }) => {
   return (
@@ -130,7 +131,7 @@ const Hero = ({ onOpenModal }) => {
                   overflow-hidden
                 "
                 alt="Estúdio de tatuagem moderno e confortável"
-               src="src/assets/fotoscurso/fotomojo7.jpeg" /> {/*https://images.unsplash.com/photo-1701394755769-b51c473949f4*/}
+               src={fotomojo7} /> {/*https://images.unsplash.com/photo-1701394755769-b51c473949f4*/}
             </div>
             
             {/* Decorative Elements */}

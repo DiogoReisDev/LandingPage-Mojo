@@ -6,14 +6,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import LogoBackground from "@/components/LogoBackground";
+import kitiniciante1 from "@/assets/kit/kit-iniciante.jpeg";
+import kitiniciante2 from "@/assets/kit/kit-iniciante2.jpeg";
+import kitiniciante3 from "@/assets/kit/kit-iniciante3.jpeg";
 
 export default function KitProduct() {
   const { slug } = useParams();
 
   const images = [
-    "/src/assets/kit/kit-iniciante.jpg",
-    "/src/assets/kit/kit-iniciante-2.jpg",
-    "/src/assets/kit/kit-iniciante-3.jpg",
+    kitiniciante1,
+    kitiniciante2,
+    kitiniciante3,
   ];
 
   const product = useMemo(() => {
