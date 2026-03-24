@@ -100,7 +100,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button
-                onClick={OpenModal}
+                onClick={openModal}
                 className="bg-primary-green hover:bg-dark-green text-primary-beige px-8 py-4 rounded-full font-semibold text-lg shadow-green pulse-green group"
               >
                 Inscreva-se Agora
