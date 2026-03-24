@@ -18,23 +18,26 @@ const PhotoCarousel = () => {
       photos: [
         fotomojo1,
         fotomojo18,
-        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
+        fotomojo21,
+        fotomojo22
       ]
     },
     {
       category: "Ambiente de Aprendizado",
       photos: [
-        "https://images.unsplash.com/photo-1517635728137-db30bef3c38e",
-        "https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0",
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+        fotomojo12,
+        fotomojo16,
+        fotomojo20,
+        fotomojo9
       ]
     },
     {
       category: "Equipamentos e Materiais",
       photos: [
-        "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
-        "https://images.unsplash.com/photo-1580281657521-7c1a3c4a54c5",
-        "https://images.unsplash.com/photo-1603575448367-c99ef6b3e44f"
+        fotomojo19,
+        fotomojo23,
+        fotomojo24,
+        fotomojo25
       ]
     }
   ];
@@ -104,9 +107,9 @@ const PhotoCarousel = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-bold text-primary-green mb-6"
+            className="text-3xl md:text-5xl font-bold text-primary-green mb-6 overflow-hidden"
           >
-            <span className="inline-block rounded-md bg-primary-green text-primary-beige px-2 py-1">
+            <span className="block break-words rounded-md bg-primary-green text-primary-beige px-2 py-1">
               Momentos Especiais do Nosso Estúdio
             </span>
           </motion.h2>

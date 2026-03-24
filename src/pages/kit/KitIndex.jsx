@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import RegistrationModal from "@/components/RegistrationModal";
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function KitIndex() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-primary-green">
-      <Header />
+      <Header onOpenModal={handleOpenModal} />
 
       <main className="container mx-auto px-4 pt-28 pb-16">
         <h1 className="text-3xl md:text-5xl font-bold text-primary-beige mb-6">
@@ -33,6 +40,11 @@ export default function KitIndex() {
           </Link>
         </div>
       </main>
+
+      <RegistrationModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
 
       <Footer />
     </div>

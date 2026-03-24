@@ -1,3 +1,4 @@
+import RegistrationModal from "@/components/RegistrationModal";
 import React, { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -27,17 +28,21 @@ export default function KitProduct() {
       priceCourseKit: 2387.9,
       stock: 5,
       description: `
-Kit profissional pensado para quem quer iniciar na tatuagem com qualidade e segurança.
+Kit profissional pensado para quem quer iniciar na tatuagem com qualidade e confiança.
 
 Inclui:
-• Máquina EZ Caster Plus  
-• Papel hectográfico  
-• Stencil  
-• Tintas  
-• Batoques  
-• Skins artificiais  
-• Espátulas  
-• Materiais de prática  
+• 1 Máquina EZ Caster Bateria removível
+• 1 Tinta Easy Glow Reaven Black
+• 1 Manteiga Cat Slobber 90g
+• 1 Stencil 30ml 
+• 1 Pele Artificial
+• 1 Frasco Espumador 210ml
+• 1 Borrifador 250ml
+• 10 Cartuchos Scarlat
+• 2 Papel hectográfico  
+• Batoques P  
+• Palitos
+• Brindes e Tutorial Básico
 
 Produto ideal tanto para iniciantes quanto para quem quer montar seu primeiro setup profissional.
 `,
@@ -55,6 +60,11 @@ Produto ideal tanto para iniciantes quanto para quem quer montar seu primeiro se
   const [selectedFreight, setSelectedFreight] = useState(null);
 
   const [zoomIndex, setZoomIndex] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+  setIsModalOpen(true);
+};
 
   const checkoutLinks = {
     kit: "https://mojodojo-estudio.pay.yampi.com.br/r/J4IUS93CPL",
@@ -99,7 +109,7 @@ Produto ideal tanto para iniciantes quanto para quem quer montar seu primeiro se
 
   return (
     <div className="min-h-screen bg-primary-green relative overflow-hidden">
-      <Header />
+      <Header onOpenModal={handleOpenModal} />
 
       <LogoBackground theme="green" count={20} />
 
@@ -316,6 +326,10 @@ Produto ideal tanto para iniciantes quanto para quem quer montar seu primeiro se
         </div>
       </main>
 
+      <RegistrationModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
       <Footer />
     </div>
   );

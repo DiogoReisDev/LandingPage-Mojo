@@ -130,10 +130,10 @@ const Hero = ({ onOpenModal }) => {
                   rounded-2xl
                   overflow-hidden
                 "
-                alt="Estúdio de tatuagem moderno e confortável"
-               src={fotomojo7} /> {/*https://images.unsplash.com/photo-1701394755769-b51c473949f4*/}
+                alt="Estúdio de tatuagem acolhedor e confortável"
+               src={fotomojo17} /> {fotomojo19}
             </div>
-            
+
             {/* Decorative Elements */}
             <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary-green/20 rounded-full blur-xl"></div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary-beige/30 rounded-full blur-xl"></div>

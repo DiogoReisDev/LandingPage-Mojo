@@ -9,9 +9,9 @@ const VideoGallery = () => {
   const videos = [
     {
       id: 1,
-      title: "Turma Janeiro 2024",
+      title: "Turmas do mojo dojo",
       description: "Acompanhe o desenvolvimento dos alunos durante o curso",
-      thumbnail: "Estudantes aprendendo tatuagem em sala de aula moderna",
+      thumbnail: "Estudantes aprendendo tatuagem do zero",
       videoUrl: "https://www.youtube.com/embed/5m4f1j_V6mI" 
     },
     {
@@ -23,7 +23,7 @@ const VideoGallery = () => {
     },
     {
       id: 3,
-      title: "Técnicas Avançadas",
+      title: "Teoria e praticas Avançadas",
       description: "Demonstração de técnicas profissionais de tatuagem",
       thumbnail: "Instrutor demonstrando técnicas avançadas de tatuagem",
       videoUrl: "https://www.youtube.com/embed/5m4f1j_V6mI"
