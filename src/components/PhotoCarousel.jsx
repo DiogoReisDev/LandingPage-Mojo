@@ -4,6 +4,16 @@ import { ChevronLeft, ChevronRight, Camera } from "lucide-react";
 import LogoBackground from "@/components/LogoBackground";
 import fotomojo1 from "@/assets/fotoscurso/fotomojo1.jpeg";
 import fotomojo18 from "@/assets/fotoscurso/fotomojo18.jpeg";
+import fotomojo9 from "@/assets/fotoscurso/fotomojo9.jpeg";
+import fotomojo12 from "@/assets/fotoscurso/fotomojo12.jpeg";
+import fotomojo16 from "@/assets/fotoscurso/fotomojo16.jpeg";
+import fotomojo19 from "@/assets/fotoscurso/fotomojo19.jpeg";
+import fotomojo20 from "@/assets/fotoscurso/fotomojo20.jpeg.png";
+import fotomojo21 from "@/assets/fotoscurso/fotomojo21.jpeg.png";
+import fotomojo22 from "@/assets/fotoscurso/fotomojo22.jpeg.png";
+import fotomojo23 from "@/assets/fotoscurso/fotomojo23.jpeg";
+import fotomojo24 from "@/assets/fotoscurso/fotomojo24.jpeg";
+import fotomojo25 from "@/assets/fotoscurso/fotomojo25.jpeg";
 
 const PhotoCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

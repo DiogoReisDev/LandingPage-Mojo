@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Star, Users, Clock, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LogoBackground from "@/components/LogoBackground";
-import fotomojo7 from "@/assets/fotoscurso/fotomojo7.jpeg";
+import fotomojo17 from "@/assets/fotoscurso/fotomojo17.jpeg";
+import fotomojo19 from "@/assets/fotoscurso/fotomojo19.jpeg";
 
 const Hero = ({ onOpenModal }) => {
   return (
