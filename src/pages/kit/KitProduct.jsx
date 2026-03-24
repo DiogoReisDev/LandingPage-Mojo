@@ -1,4 +1,4 @@
-import RegistrationModal from "@/components/RegistrationModal";
+
 import React, { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
