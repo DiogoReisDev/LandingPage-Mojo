@@ -4,8 +4,10 @@ import { ArrowRight, Star, Users, Clock, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LogoBackground from "@/components/LogoBackground";
 import fotomojo17 from "@/assets/fotoscurso/fotomojo17.jpeg";
+import { useModal } from "@/context/ModalContext";
 
-const Hero = ({ onOpenModal }) => {
+const Hero = () => {
+  const { openModal } = useModal();
   return (
     <section 
       id="inicio"
@@ -98,7 +100,7 @@ const Hero = ({ onOpenModal }) => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button
-                onClick={onOpenModal}
+                onClick={OpenModal}
                 className="bg-primary-green hover:bg-dark-green text-primary-beige px-8 py-4 rounded-full font-semibold text-lg shadow-green pulse-green group"
               >
                 Inscreva-se Agora

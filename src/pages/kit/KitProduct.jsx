@@ -60,11 +60,6 @@ Produto ideal tanto para iniciantes quanto para quem quer montar seu primeiro se
   const [selectedFreight, setSelectedFreight] = useState(null);
 
   const [zoomIndex, setZoomIndex] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => {
-  setIsModalOpen(true);
-};
 
   const checkoutLinks = {
     kit: "https://mojodojo-estudio.pay.yampi.com.br/r/J4IUS93CPL",
@@ -109,7 +104,7 @@ Produto ideal tanto para iniciantes quanto para quem quer montar seu primeiro se
 
   return (
     <div className="min-h-screen bg-primary-green">
-      <Header onOpenModal={handleOpenModal} />
+      <Header />
 
       <LogoBackground theme="green" count={20} />
 
@@ -326,10 +321,6 @@ Produto ideal tanto para iniciantes quanto para quem quer montar seu primeiro se
         </div>
       </main>
 
-      <RegistrationModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-      />
       <Footer />
     </div>
   );

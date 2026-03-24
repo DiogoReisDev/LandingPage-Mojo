@@ -2,8 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useModal } from "@/context/ModalContext";
 
-const Contact = ({ onOpenModal }) => {
+const Contact = () => {
+  const { openModal } = useModal();
   const handleContact = () => {
     const message = encodeURIComponent(
       "Oi! Vim pelo site do Mojo Dojo e queria tirar uma dúvida."
@@ -180,7 +182,7 @@ const Contact = ({ onOpenModal }) => {
 
               <div className="space-y-4">
                 <Button
-                  onClick={onOpenModal}
+                  onClick={OpenModal}
                   className="w-full bg-primary-beige hover:bg-accent-beige text-primary-green px-8 py-4 rounded-full font-semibold text-lg shadow-green pulse-green"
                 >
                   Quero Me Inscrever

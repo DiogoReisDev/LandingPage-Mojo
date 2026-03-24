@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster';
 
@@ -11,11 +11,8 @@ import PhotoCarousel from '@/components/PhotoCarousel';
 import Stats from '@/components/Stats';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import RegistrationModal from '@/components/RegistrationModal';
 
 export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <>
       <Helmet>
@@ -23,17 +20,16 @@ export default function Home() {
       </Helmet>
 
       <div className="min-h-screen">
-        <Header onOpenModal={() => setIsModalOpen(true)} />
-        <Hero onOpenModal={() => setIsModalOpen(true)} />
+        <Header />
+        <Hero />
         <About />
         <Stats />
         <CourseContent />
         <VideoGallery />
         <PhotoCarousel />
-        <Contact onOpenModal={() => setIsModalOpen(true)} />
+        <Contact />
         <Footer />
         <Toaster />
-        <RegistrationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
     </>
   );

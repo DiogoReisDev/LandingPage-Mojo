@@ -4,8 +4,10 @@ import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import LogoVerde from "@/assets/logo/logo-bg.png";
+import { useModal } from "@/context/ModalContext";
 
-const Header = ({ onOpenModal }) => {
+const Header = () => {
+  const { openModal } = useModal();
   const location = useLocation();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -119,7 +121,7 @@ const Header = ({ onOpenModal }) => {
             </button>
 
             <Button
-              onClick={onOpenModal}
+              onClick={OpenModal}
               className="bg-primary-green hover:bg-dark-green text-primary-beige px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-green"
             >
               Inscreva-se
@@ -175,7 +177,7 @@ const Header = ({ onOpenModal }) => {
 
               <Button
                 onClick={() => {
-                  onOpenModal();
+                  OpenModal();
                   setIsMenuOpen(false);
                 }}
                 className="bg-primary-green hover:bg-dark-green text-primary-beige w-full mt-4 rounded-full font-medium"
