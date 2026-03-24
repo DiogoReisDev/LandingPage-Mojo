@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Shield, Trophy, Sparkles } from 'lucide-react';
 import LogoBackground from "@/components/LogoBackground";
+import fotomojo19 from "@/assets/fotoscurso/fotomojo19.jpeg";
 
 const About = () => {
   const features = [
@@ -106,7 +107,7 @@ const About = () => {
             <img  
               className="w-full h-auto rounded-3xl shadow-green" 
               alt="Interior do estúdio Mojo Dojo Tattoo"
-             src="https://images.unsplash.com/photo-1701394755769-b51c473949f4" />
+             src={fotomojo19} />
           </div>
           
           {/* Decorative Elements */}

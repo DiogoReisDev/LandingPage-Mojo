@@ -108,7 +108,7 @@ Produto ideal tanto para iniciantes quanto para quem quer montar seu primeiro se
     setZoomIndex((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <div className="min-h-screen bg-primary-green relative overflow-hidden">
+    <div className="min-h-screen bg-primary-green">
       <Header onOpenModal={handleOpenModal} />
 
       <LogoBackground theme="green" count={20} />

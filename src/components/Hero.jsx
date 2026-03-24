@@ -4,7 +4,6 @@ import { ArrowRight, Star, Users, Clock, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LogoBackground from "@/components/LogoBackground";
 import fotomojo17 from "@/assets/fotoscurso/fotomojo17.jpeg";
-import fotomojo19 from "@/assets/fotoscurso/fotomojo19.jpeg";
 
 const Hero = ({ onOpenModal }) => {
   return (
@@ -132,7 +131,7 @@ const Hero = ({ onOpenModal }) => {
                   overflow-hidden
                 "
                 alt="Estúdio de tatuagem acolhedor e confortável"
-               src={fotomojo17} /> {fotomojo19}
+               src={fotomojo17} />
             </div>
 
             {/* Decorative Elements */}
