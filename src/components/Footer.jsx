@@ -91,7 +91,7 @@ const Footer = () => {
 
               <div className="flex space-x-3">
                 <button
-                  onClick={() => window.open("https://instagram.com/seuusuario", "_blank")}
+                  onClick={() => window.open("https://www.instagram.com/mojodojo_tattoo/", "_blank")}
                   className="w-10 h-10 bg-primary-beige/10 hover:bg-primary-beige/20 rounded-lg flex items-center justify-center transition-colors"
                 >
                   <Instagram className="w-5 h-5 text-primary-beige" />
