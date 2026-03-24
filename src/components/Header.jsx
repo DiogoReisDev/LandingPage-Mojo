@@ -121,7 +121,7 @@ const Header = () => {
             </button>
 
             <Button
-              onClick={OpenModal}
+              onClick={openModal}
               className="bg-primary-green hover:bg-dark-green text-primary-beige px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-green"
             >
               Inscreva-se
@@ -177,7 +177,7 @@ const Header = () => {
 
               <Button
                 onClick={() => {
-                  OpenModal();
+                  openModal();
                   setIsMenuOpen(false);
                 }}
                 className="bg-primary-green hover:bg-dark-green text-primary-beige w-full mt-4 rounded-full font-medium"

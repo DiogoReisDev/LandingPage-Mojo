@@ -182,7 +182,7 @@ const Contact = () => {
 
               <div className="space-y-4">
                 <Button
-                  onClick={OpenModal}
+                  onClick={openModal}
                   className="w-full bg-primary-beige hover:bg-accent-beige text-primary-green px-8 py-4 rounded-full font-semibold text-lg shadow-green pulse-green"
                 >
                   Quero Me Inscrever
